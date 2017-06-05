@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#kontener {
+    height: 600px;
+    border: 1px solid black;
+    background: grey;
+    padding: 45px;
+}
+
+#kontener>div {
+    width: 100%;
+    height: 250px;
+    background: yellow;
+}
+
+#kontener #kont_1 {
+    margin-bottom: 10px;
+    position: relative;
+    top: 100px;
+    left: 60px;
+}
+
+#kontener #kont_1 p {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+#main-nav {
+    width: 100%;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-bottom: 2px solid black;
+}

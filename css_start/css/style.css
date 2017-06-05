@@ -1,0 +1,84 @@
+/*selektor znacznika*/
+
+p {
+    color: blue;
+    font-size: 18px;
+    background: yellow;
+}
+
+
+/*selektor ID*/
+
+#identyfikator {
+    background: grey;
+    color: white;
+    font-size: 20px;
+}
+
+
+/*selektor class*/
+
+.przyklad {
+    background: blue;
+    color: black;
+    font-size: 16px;
+}
+
+
+/*łączenie selektorów*/
+
+a,
+span {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* Selektor bezpośredniego potomka*/
+
+li>a {
+    font-size: 20px;
+    color: aqua;
+}
+
+
+/*Selektor elementów potomnych*/
+
+div p {
+    background: pink;
+    color: blue;
+    font-size: 30px;
+}
+
+
+/*selektor bliskiego rodzenstwa*/
+
+div p+a {
+    background: grey;
+    color: bisque;
+    text-transform: uppercase;
+}
+
+
+/*selektor rodzenstwa*/
+
+
+header h2 ~ h3 {
+    color: chartreuse;
+    background: yellow;    
+}
+
+/*selektor wykluczajacy*/
+#wykluczajacy > li:not(.last) {
+    color: coral;
+}
+#wykluczajacy {
+    list-style-type: none;
+}
+
+/*selektor kolejnego elementu potomnego*/
+#nth > li:nth-child(-n+3) {
+    background: red;
+    font-size: 28px;
+}
+
