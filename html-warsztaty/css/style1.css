@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu {
+    background-color: black;
+    text-align: center;
+}
+
+#menu ul {
+    margin: 0;
+}
+
+#menu .menu-item {
+    display: inline-block;
+    list-style: none;
+    padding: 30px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+#header {
+    position: relative;
+    text-align: center;
+}
+
+header>h1 {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: wheat;
+    font-size: 40px;
+    top: 50%;
+    transform:translateY(-50%);
+}
+
+#header img {
+    width: 100%;
+}
+
+.main-header-text {
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+    padding: 25px;
+}
+
+#contact {
+    background-color: #111;
+    color: aliceblue;
+    padding: 25px;
+}
+
+#contact-header {
+    text-align: center;
+}
+
+#contact-content {
+    text-align: center;
+}

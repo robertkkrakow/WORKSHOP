@@ -1,0 +1,106 @@
+#before .pierwszy::before {
+    content: "przed elementem ";
+    color: red;
+}
+
+#after .drugi::after {
+    content: "za elementem";
+    color: green;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+#first-letter p::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+#first-line p::first-line {
+    color: blue;
+    background-color: aqua;
+}
+
+#link a:link {
+    color: orange;
+}
+
+#link a:visited {
+    color: red;
+}
+
+#before:hover{
+    color: red;
+}
+
+#link a:active{
+    background-color: yellow;
+}
+
+:target{
+    background-color: orange;
+}
+
+#focus input:focus{
+    border: 5px solid green;
+}
+
+#lang p:lang(en){
+    background-color: aqua;
+}
+/*inne pseudo klady*/
+#first-child .lista li:first-child{
+    background-color: green;
+}
+#first-child .lista li:last-child{
+    background-color: darkkhaki;
+}
+
+div span:only-child{
+    background-color: darkgoldenrod;
+}
+
+div:empty{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+}
+
+
+/*NTH child*/
+#nth-childs ul li:nth-child(3){
+    background-color: red;
+}
+#nth-childs ul li:nth-child(even){
+    background-color: indianred;
+}
+#nth-childs ul li:nth-child(odd){
+    background-color: pink;
+}
+#nth-childs ul li:nth-child(3n+2){
+    
+    font-size: 30px;
+}
+
+#nth-last-childs ul li:nth-last-child(3n+2){
+    font-size: 30px;
+    background-color: blue;
+}
+
+/*selektor atrybutow*/
+input[type="text"] {
+    border: 10px solid grey;
+}
+/* to robi do obydwu pol, bez okreslania typu
+input[type] {
+    border: 10px solid grey;
+}*/
+
+
+#attributes a[title~="opis"]{
+    font-size: 40px;
+}
+
+#attributes a[title*="link"]{
+
+    background-color: yellow;
+}
