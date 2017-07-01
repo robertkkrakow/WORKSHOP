@@ -6,3 +6,14 @@
 .container .row .col-lg-6:last-child{
     background-color: green;
 }
+
+/*
+.item img{
+    width: 600px;
+}*/
+
+
+
+.item .testowy{
+    width: 100%;
+}
